@@ -1,0 +1,115 @@
+* {
+    font-family: 'Belanosima', sans-serif;
+    background-color: #1F8A70;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    
+}
+
+
+h1 {
+    position: absolute;
+    top: 400px;
+    font-family: 'Belanosima', sans-serif;
+    font-size: 5rem;
+    color: white;
+    background-color: #00425A;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#banner {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+ }
+
+ .barraSuperior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin: 2%;
+    background-color: #1F8A70;
+    font-size: 30px;
+}
+
+ .opciones{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        
+        justify-content: space-between;
+        margin: 5%;
+        border-color: blue;
+        
+}
+
+img {
+    width: 100%;
+}
+
+#pieDePagina{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 0.5fr;
+    justify-items: center;
+    align-items: center;
+    
+    
+    
+}
+
+ion-icon{
+    color: white;
+    font-size: 2rem;
+    
+    
+}
+
+.formularioRegistro{
+    
+    width: 400px;
+    background-color: #1F8A70;
+    
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    box-shadow: 7px 13px 37px #00425A00;
+}
+
+.formularioRegistro h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.campos{
+    width: 100%;
+    background-color: #1F8A70;
+    color: black;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid black;
+    font-size: 18px;
+}
+
+.formularioRegistro .boton{
+    width: 100%;
+    background-color: #1F8A70;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+
+
+
+
+
