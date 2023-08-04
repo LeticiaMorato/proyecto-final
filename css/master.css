@@ -1,253 +1,176 @@
 * {
-    font-family: 'Belanosima', sans-serif;
-    background-color: #1F8A70;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  font-family: "Belanosima", sans-serif;
+  background-color: #7ea7c3;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 9px;
+}
+html {
+  scroll-behavior: smooth;
 }
 
-/* HEADER */
+html,
+body {
+  overflow-x: hidden;
+}
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
 
-.encabezado {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
+.contenedor {
+  margin-top: 10px;
+  padding: 10px;
 }
 
 .encabezado nav {
-    width: 100%;
+  display: flex;
+  position: absolute;
+  position: fixed;
 }
-
 .barraSuperior {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;    
-    text-align: center;
-    margin: 5px;
-    background-color: #1F8A70;
-    font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  background-color: #1f8a70;
+  margin: 10px;
 }
 
-.item-header{
-    list-style: none;
-    text-decoration: none;
+.item-header {
+  list-style: none;
+  text-decoration: none;
 }
 
-.item{
-    font-size: 20px;
-    text-decoration: none;
-    margin: 5px;
+.item {
+  font-size: 15px;
+  text-decoration: none;
+  margin: 5px;
 }
 
-
-/* BANNER */
-
-.banner {
-    position: relative;
-    width: 90vw;
-    margin: auto auto;
+nav ul li:hover {
+  text-decoration: underline;
 }
 
-h1 {
-    font-family: 'Belanosima', sans-serif;
-    font-size: 2rem;
-    color: #EFF5F5;
-    background-color: #00425A;
-    padding: 20px;
-    width: 100%;
-    text-align: center;
+.banner-img img {
+  border-radius: 3px;
+  margin: 0;
 }
 
-.opciones {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 5%;
-    margin: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
+.banner-img h1 {
+  font-family: "Belanosima", sans-serif;
+  font-size: 2rem;
+  color: #eff5f5;
+  background-color: #00425a;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 3px;
 }
 
-.banner-text{
-    margin: 5px;
+.card {
+  padding: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #008fba;
 }
-
-.banner-text a, p {
-    text-decoration: none;
-    color: #EFF5F5
-    ;
+.card a {
+  color: #00425a;
+  background-color: inherit;
+  font-size: 15px;
+  display: inline-block;
+  margin-bottom: 10px;
 }
-
-img {
-    width: 100%;
-}
-/* MEDIA QUERIES */
-
-
-
-
-@media (max-width: 768px) {
-    .banner-text p {
-        display: none;
-        
-    }
-}
-
-
-
-
-
-
-/* FOOTER */
-
-#pieDePagina {
-    width: 100vw;
-    margin: 5px;
-    padding: 5px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.card p {
+  color: #00425a;
+  background-color: inherit;
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 5px;
 }
 
 .pie-de-pagina-item {
-    list-style: none;
-    text-decoration: none;
-    
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.pie-de-pagina-item h4 {
+  display: inline-block;
+  font-size: 15px;
+  margin: 10px 0 10px 0;
+}
+.pie-de-pagina-item .redesSociales {
+  display: flex;
+  flex-direction: row;
+}
+.pie-de-pagina-item .redesSociales {
+  display: inline-block;
 }
 
-h4 {
-    color: #181823;
-    padding: 20px;
-    width: 100%;
-    text-align: center;
+.pie-de-pagina-item .redesSociales a ion-icon {
+  margin: 10px;
+  width: 20px;
+  height: 20px;
 }
-.h4 {
-    width: 100%;
+.pie-de-pagina-item .redesSociales .logo-facebook {
+  color: #1877f2;
 }
-
-.redesSociales {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
+.pie-de-pagina-item .redesSociales .logo-instagram {
+  color: #8a3ab9;
 }
-
-.mapa {
-    width: 100%;
-    display: flex;
+.pie-de-pagina-item .redesSociales .logo-linkedin {
+  color: #0077b5;
 }
-
-.contacticon{
-    display: flex;
-    align-items: center;
+.contacticon {
+  display: block;
+  height: 15px;
+  margin: 2px;
 }
-
-.contacticon ion-icon{
-    margin-right: 6px;
+.contacticon ion-icon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
 }
 
-.contacticon a{
-    text-decoration: none;
-    }
-
-ion-icon {
-    color: #EFF5F5;
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
+.up-top {
+  position: absolute;
+  bottom: 0;
+  position: fixed;
 }
 
-@media (max-width: 320px) {
-    .banner-text a, p {
-        display: none;
-        
-    }
-    .pie-de-pagina-item {
-        flex-direction: column;
-    }
-    .contenedor {
-        width: 100%;
-    }
-
+#pieDePagina {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
 }
-
-/* FORM */
-
-.contacto-container{
-   height: 100vh;
-}
-
-form {
-    align-items: center;
-    justify-content: center;
-    padding: 50px 55px 85px 55px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    width: 340px;
-}
-
-/* MEDIA QUERIES */
 
 @media (min-width: 320px) {
-    form {
-        height: 80vh;
-    }
-}
-
-@media (max-width: 768px) {
-    form {
-        height: 50vh;
-    }
-}
-
-.input-group {
+  .opciones {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-}
+  }
+  .card {
+    margin: 7px;
+  }
+  .card a {
+    font-size: 25px;
+  }
+  .card p {
+    font-size: 20px;
+  }
 
-h3 {
-    color: #181823;
-    font-size: 35px;
-    margin: 0;
-    text-align: center;
-}
-
-label {
-    color: #EFF5F5;
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-input {
-    padding: 17px 10px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    border: 2px solid white;
-    color: #181823;
-}
-
-input::placeholder {
-    color: #EFF5F5;
-}
-
-.btn {
-    font-size: 16px;
-}
-
-.contact-container {
-    background-image: url(../img/backformulario.jpg);
-    background-size: cover;
-    width: 100%;
+  #pieDePagina {
     display: flex;
-    justify-content: center;
-    height: 100%;
-}
-
-#fondoFormulario {
-    background-image: url("backformulario.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+  }
 }

@@ -15,79 +15,90 @@
 </head>
 
 <body>
-    <div class="contenedor">
-        <header class="encabezado">
-            <nav>
-                <ul class="barraSuperior">
-                    <li class="item-header"><a href="#" class="item">Inicio</a></li>
-                    <li class="item-header"><a href="#" class="item">Nosotros</a></li>
-                    <li class="item-header"><a href="#" class="item">Servicios</a></li>
-                    <li class="item-header"><a href="contact.html" target="_blank" class="item">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header class="encabezado" id="home">
+        <nav>
+            <ul class="barraSuperior">
+                <li class="item-header"><a href="#home" class="item">Inicio</a></li>
+                <li class="item-header"><a href="#contenedor" class="item">Nosotros</a></li>
+                <li class="item-header"><a href="contact.html" target="_blank" class="item">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenedor" id="contenedor">
 
-        <section class="banner">
-            <img src="./img/banner.jpg" alt="UntrefSchool">
+        <section class="banner-img">
             <h1>Bienvenidos a UntrefSchool</h1>
+            <img src="./img/banner.jpg" alt="UntrefSchool">
         </section>
     
-        <section class="banner">
+        <main class="nosotros" id="nosotros">
             <div class="opciones">
-                <div class="banner-text">
+                <div class="card">
                     <a href="#">Quienes somos?</a>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, est. Aspernatur, omnis labore!
-                        Ullam, at!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi consectetur cum dolor veniam nam odio, labore omnis voluptatibus magnam fugiat necessitatibus quas, consequuntur aliquid odit id, amet expedita voluptas totam!</p>
                 </div>
-                <div class="banner-text">
-                    <a href="#">Por qué elegirnos?</a>  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Excepturi, id!</p>
+                <div class="card">
+                    <a href="#">Por qué elegirnos?</a> 
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas culpa eum quibusdam sed amet velit. Ipsa adipisci quis non exercitationem deleniti eligendi, autem, consequatur molestiae aut hic, ex ut architecto.</p>
                 </div>
-                <div class="banner-text">
-                    <a href="#">Propuesta educativa</a>  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-                        sit explicabo est necessitatibus, nihil quibusdam.</p>
+                <div class="card">
+                    <a href="#">Propuesta educativa</a> 
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quibusdam suscipit repellendus veniam, deserunt excepturi explicabo error placeat voluptate eaque illo, voluptatem consequatur. Animi rerum quam perspiciatis! Laborum, necessitatibus natus!</p>
                 </div>
-                <div class="banner-text">
-                    <a href="#">Ultimas noticias</a>  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
-                        delectus voluptatum officiis commodi incidunt cupiditate.</p>
+                <div class="card">
+                    <a href="#">Ultimas noticias</a>  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, officia exercitationem at pariatur aperiam, excepturi officiis a aliquid totam expedita est dicta tempore! Voluptas veritatis consectetur illum nulla eveniet ipsum!</p>
                 </div>
             </div>
-        </section>    
+        </main>    
 
         <footer id="pieDePagina">
-            <div class="pie-de-pagina-item">
+            <section class="pie-de-pagina-item">
                 <h4>Sumate a nuestras redes!</h4>
                 <div class="redesSociales">
-                    <div><a href="https://www.facebook.com" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></div>
-                    <div><a href="https://www.instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></div>
-                    <div><a href="https://www.linkedin.com" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></div>
+                    <a href="https://www.facebook.com" target="_blank"><ion-icon  name="logo-facebook" class="logo-facebook"  ></ion-icon></a>
+                    <a href="https://www.instagram.com" target="_blank"><ion-icon name="logo-instagram"class="logo-instagram" ></ion-icon></a>
+                    <a href="https://www.linkedin.com" target="_blank"><ion-icon  name="logo-linkedin" class="logo-linkedin" ></ion-icon></a>
                 </div>
-            </div>
+            </section>
         
             <div class="pie-de-pagina-item">
-                <div class="h4">
-                    <h4>UntrefSchool</h4></div>
+                <div>
+                    <h4>UntrefSchool</h4>
                     <div class="mapa"></div>
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8752992957798!2d-58.37892988953356!3d-34.60731467284029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb3b098d0fdb%3A0xc5173d52ffc132de!2sUNTREF%20Posgrado!5e0!3m2!1ses-419!2sar!4v1689683595668!5m2!1ses-419!2sar"
                      style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-            
+            </div>
         
             <div class="pie-de-pagina-item">
-                <div class="h4">
+                <div class="more-info">
                     <h4> Para mas información:</h4>
                 </div>
-                <div>
-                    <div class="contacticon"><ion-icon name="mail-outline"></ion-icon><a href="untrefschool@untref.edu.ar">
-                            untrefschool@untref.edu.ar</a></div>
-                    <div class="contacticon"><ion-icon name="call-outline"></ion-icon><a href="tel:54911-4519-6010">54911-4519-6010</a></div>
-                    <div class="contacticon"><ion-icon name="logo-whatsapp"></ion-icon><a href="(011) 3987-0609"> (011) 3987-0609</a></div>
+                <div class="contact">
+                    <div class="contacticon">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <a href="mailto:untrefschool@untref.edu.ar"> untrefschool@untref.edu.ar</a>                    
+                    </div>
+                    <div class="contacticon">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <a href="tel:54911-4519-6010">54911-4519-6010</a>
+                    </div>
+                    <div class="contacticon">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                        <a href="tel:(011)39870609" >(011) 3987-0609</a>
+                    </div>
                 </div>
             </div>
         </footer>
     </div>
+    <a href="#home">
+        <ion-icon name="chevron-up-circle-outline" class="up-top" size="large">
+        </ion-icon>
+
+    </a>
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
